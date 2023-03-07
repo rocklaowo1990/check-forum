@@ -1,2 +1,15 @@
-.__pycache__
-/0306
+# 这里是所有的文件都不git
+/*
+
+# 下方是必要的文件
+# services文件夹
+# .gitignore 文件也是必须要的
+# icon.ico
+# main.py 是必需的
+!/services
+!/.gitignore
+!/icon.ico
+!main.py
+
+# 排除掉 __pycache__
+__pycache__
