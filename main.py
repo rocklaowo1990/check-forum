@@ -4,11 +4,9 @@ import services.data as data
 
 # 打包
 # pip3 install pyinstaller
-# pip install pyinstaller
-# pyinstaller -F forum.py --clean
+# pyinstaller -F main.py --clean
 # pyinstaller -F -i 图标的地址.ico forum.py --clean
 # pyinstaller -F -i c:\Users\rockl\Documents\python_forum\bitbug_favicon.ico main.py --clean
-# pyinstaller -F main.py --clean
 
 # 第一步: 先输入目标文件夹
 # 如果不存在, 或者输入空值的话会一直要求输入, 知道输入 exit 结束
@@ -52,5 +50,5 @@ common.out_data(task, log_path)
 common.out_history(history, log_path)
 
 # 开始处理审核程序
-# check = common.Check(task, history, log_path, target.path)
-# new_works = check.run()
+check = common.Check(task, history, log_path, target.path)
+new_works = check.run()

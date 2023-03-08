@@ -8,6 +8,7 @@ def input_target_path(log_path: str = ''):
     # 判断条件: 目录是否存在
     while True:
         path_input = input('\033[0;35;40m==> 请输入目录名称 : \033[0m')
+        path_input = path_input.replace("'", '')
 
         # 不等于空就是说输入了一个目录
         # 判断这个目录是否存在

@@ -13,3 +13,7 @@ Works = _work.Works
 Work = _work.Work
 Sheet = _work.Sheet
 Row = _work.Row
+
+import services.data.const as _const
+
+const = _const
