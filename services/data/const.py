@@ -6,4 +6,5 @@ BLACK_LIST = {
     'freeforums.net': 5,
     'boards.net': 10,
     'createaforum.com': 5,
+    'delphiforums.com': 5,
 }
