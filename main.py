@@ -29,10 +29,13 @@ history: list[data.History] = []
 # 开始读取数据
 # 这里可以读取到表格的数据和历史记录
 for f in target.children:
-    isXls = '.xls'.upper() == str(path.splitext(f)[-1]).upper()
-    isXlsx = '.xlsx'.upper() == str(path.splitext(f)[-1]).upper()
-    isCsv = '.csv'.upper() == str(path.splitext(f)[-1]).upper()
-    isHistory = 'history.json'.upper() == str(path.split(f)[-1]).upper()
+    f_name = str(path.split(f)[-1]).upper()
+    f_last = str(path.splitext(f)[-1]).upper()
+
+    isXls = '.xls'.upper() == f_last
+    isXlsx = '.xlsx'.upper() == f_last
+    isCsv = '.csv'.upper() == f_last
+    isHistory = 'history.json'.upper() == f_name
 
     # 这里是读取数据( 要执行的数据 )
     if isXls or isXlsx or isCsv:
